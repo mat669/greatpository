@@ -13,9 +13,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Data structure
 This app takes values of the big 7 cryptocurrencies available on the market, listing them by decreasing level of capitalisation. Data are collected from 'Yahoo Finance' using 'quantmod' library.
 
-```{r}
-
-```
 What you can do with it is:
 
 - *drawing a time series to have a picture of the trend*
@@ -70,10 +67,6 @@ ggcorrplot(round(cor(data),1),hc.order = TRUE, type = 'lower', lab = TRUE, metho
 ```
 
 As it can easily get by the chart, the results are also clustered in order to detect possible patterns which could be present and different colors correspond to different relationship's intensity level.
-
-```{r}
-
-```
 
 
 **Let's play with the widgets and find useful data for your investment!**
