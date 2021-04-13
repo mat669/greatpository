@@ -42,14 +42,8 @@ head(yield)
 
 ### Checking correlation
 Analyzing correlation between cryptocurrencies, you could view in which way they reciprocally behaved along a certain period and imagine how your portfolio could be made, according to your risk preferences. For instance, investing in a portfolio where cryptocurrencies are negative correlated, you will minimize the risk, otherwise you could search other investment profiles.
-```{r}
-
-```
 
 The chart depends on the data range and the check box group. You can draw as many correlogram as you want by selecting two cryptocurrencies on the check box group a time. The title of the graph will be automatically modified.
-```{r}
-
-```
 
 As example, the correlogram between Bitcoin and Ethereum which considers a time range from 1st january 2019 to today is reported below:
 ```{r message=FALSE, warning=FALSE}
