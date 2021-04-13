@@ -21,7 +21,7 @@ What you can do with it is:
 
 ### Drawing the time series
 You can control time series that you want to display using the data range and the select input box on the sidebar panel. Furthermore, you could check the results on a log scale through the relative check box. As example, I presented below the historic trend of Bitcoin, starting from 1st january 2019 and up to now:
-```{r BTC, echo=TRUE, message=FALSE, warning=FALSE}
+```{r BTC, echo=FALSE, message=FALSE, warning=FALSE}
 library(quantmod)
 library(ggplot2)
 BTC <- getSymbols(Symbols = 'BTC-USD', src = 'yahoo', auto.assign = FALSE)
