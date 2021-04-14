@@ -28,6 +28,7 @@ BTC <- getSymbols(Symbols = 'BTC-USD', src = 'yahoo', auto.assign = FALSE)
 Bitcoin <- window(BTC, start = '2019-01-01',end = as.character(Sys.Date()))
 chartSeries(Bitcoin,theme = chartTheme("white"),type = "line", TA = NULL)
 ```
+![image](https://user-images.githubusercontent.com/74599961/114732829-21c72100-9d43-11eb-9c89-8a8ea32e74a1.png)
 
 
 ### Looking tables
@@ -53,6 +54,7 @@ ggcorrplot(round(cor(data),1),hc.order = TRUE, type = 'lower', lab = TRUE, metho
 
 
 ```
+![image](https://user-images.githubusercontent.com/74599961/114732896-2f7ca680-9d43-11eb-9e3c-9d1d445c76fc.png)
 
 As it can easily get by the chart, the results are also clustered in order to detect possible patterns which could be present and different colors correspond to different relationship's intensity level.
 
