@@ -28,6 +28,7 @@ BTC <- getSymbols(Symbols = 'BTC-USD', src = 'yahoo', auto.assign = FALSE)
 Bitcoin <- window(BTC, start = '2019-01-01',end = as.character(Sys.Date()))
 chartSeries(Bitcoin,theme = chartTheme("white"),type = "line", TA = NULL)
 ```
+![image](https://user-images.githubusercontent.com/74599961/114685430-21faf880-9d12-11eb-851e-1c6dac15f905.png)
 
 ### Looking tables
 Choosing the number of observation that you prefer, you can look at the table to check the daily yield on the basis of a time range which you can select. For instance, a table regarding Bitcoin with 5 observations and a daily average yield with 2 lag, interpretable as how much you would have daily earned investing two days ago, is displayed below:
@@ -52,6 +53,7 @@ ggcorrplot(round(cor(data),1),hc.order = TRUE, type = 'lower', lab = TRUE, metho
 
 
 ```
+![image](https://user-images.githubusercontent.com/74599961/114685494-363ef580-9d12-11eb-8e80-10dc6f84d63b.png)
 
 As it can easily get by the chart, the results are also clustered in order to detect possible patterns which could be present and different colors correspond to different relationship's intensity level.
 
